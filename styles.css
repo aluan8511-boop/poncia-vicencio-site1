@@ -91,13 +91,6 @@ p{ line-height:1.7; color:var(--ink) }
 .card.image{
   padding:0; overflow:hidden;
 }
-.card.image img{
-  display:block; width:100%; height:auto;
-}
-.card.image figcaption{
-  padding:10px 14px; color:var(--muted);
-  background: #12162a; border-top:1px solid #202640;
-}
 
 .bullets{ margin:0; padding-left:18px }
 .bullets li{ margin:8px 0; color:#d8ddef }
