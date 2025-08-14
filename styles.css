@@ -1,0 +1,125 @@
+:root{
+  --bg:#0f1220;
+  --card:#151a2d;
+  --ink:#e9ecf1;
+  --muted:#a9b0c6;
+  --accent:#8ea2ff;
+  --accent-2:#ffd166;
+  --radius:20px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:linear-gradient(180deg,#0b0e1a, var(--bg));
+}
+
+.container{
+  width:min(1100px, 92%);
+  margin-inline:auto;
+}
+
+.hero{
+  padding:56px 0 24px;
+  background: radial-gradient(1200px 400px at 50% -120px, #1b2242, #0b0e1a 60%);
+  border-bottom:1px solid #202640;
+}
+.hero h1{
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin:0 0 8px;
+  letter-spacing:.3px;
+}
+.subtitle{
+  color:var(--muted);
+  margin:0 0 20px;
+}
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.nav a{
+  color:var(--ink);
+  text-decoration:none;
+  padding:10px 14px;
+  background:#1b2140;
+  border:1px solid #2a335c;
+  border-radius:999px;
+  font-weight:600;
+}
+.nav a:hover{ outline:2px solid var(--accent) }
+
+.section{
+  padding:48px 0;
+}
+.section.alt{
+  background:linear-gradient(180deg,#0f1220 0%, #0c1020 100%);
+}
+h2{
+  margin:0 0 18px;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  letter-spacing:.2px;
+}
+p{ line-height:1.7; color:var(--ink) }
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap:18px;
+}
+.cards-list{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid #222946;
+  border-radius:var(--radius);
+  padding:16px 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+.card h3{
+  margin:0 0 8px;
+  font-size:1.05rem;
+}
+.card p{ color:#d8ddef; margin:0 }
+.card.image{
+  padding:0; overflow:hidden;
+}
+.card.image img{
+  display:block; width:100%; height:auto;
+}
+.card.image figcaption{
+  padding:10px 14px; color:var(--muted);
+  background: #12162a; border-top:1px solid #202640;
+}
+
+.bullets{ margin:0; padding-left:18px }
+.bullets li{ margin:8px 0; color:#d8ddef }
+
+.refs{ padding-left:20px }
+.refs li{ margin:8px 0; color:#d8ddef }
+
+.tip{
+  margin-top:16px;
+  border-radius:var(--radius);
+  border:1px dashed #2a335c;
+  padding:10px 14px;
+  background:#11162b;
+}
+.tip summary{
+  cursor:pointer; font-weight:700; color:var(--accent);
+}
+
+.footer{
+  padding:26px 0;
+  border-top:1px solid #222946;
+  background:#0b0e1a;
+  color:var(--muted);
+  text-align:center;
+}
